@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Displaylistings from './Displaylistings';
+import ListingForm from './Listingform';
+// import { Route, Routes } from 'react-router-dom';
+
+// see all listings => fetch data, set to state, render listings from state
+// Add a listing and see it on homepage => ListingForm Component
+// Search a listing through description
+// Post listing to db
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   {/* <Routes>
+      <Route path='/listings' element={<Displaylistings/>}/>
+   </Routes> */}
+   <Displaylistings/>
+   
+   </>
   );
 }
 
